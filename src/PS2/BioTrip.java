@@ -73,7 +73,7 @@ public class BioTrip {
                 boolean goodAng = r.angle > angle ? angDiff <= minA : angDiff <= maxA;
                 if (!visited[loc][r.destination] && goodAng) {
                     visited[loc][r.destination] = true;
-                    minTime = Math.min(minTime, dfs2(r.destination, time + r.time, r.angle, adjList, visited));
+                    minTime = Math.min(minTime, dfs2(r.destination, time + r.time, getAng(loc, r.destination, adjList), adjList, visited));
                     visited[loc][r.destination] = false;
                 }
             }
