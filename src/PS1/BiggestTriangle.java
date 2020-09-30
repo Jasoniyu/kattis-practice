@@ -1,3 +1,5 @@
+package PS1;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

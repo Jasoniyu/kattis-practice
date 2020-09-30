@@ -1,3 +1,5 @@
+package PS1;
+
 import java.util.Scanner;
 
 public class TiredTerry {
