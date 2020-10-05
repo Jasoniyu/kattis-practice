@@ -18,6 +18,11 @@ public class FarmingMars {
 			majorityFound = false;
 			int l = sc.nextInt();
 			int r = sc.nextInt();
+			if (l == r) {
+				System.out.println("usable");
+				majorityFound = true;
+				continue;
+			}
 			HashMap<Double, Integer> hm = new HashMap<Double, Integer>();
 			int maj = (r - l + 1)/2 + 1;
 			for (int j = l-1; j < r; j++) {
